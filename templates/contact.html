@@ -31,6 +31,24 @@
 
       <button type="submit">Send Message</button>
     </form>
+
+    <!-- ✅ SUCCESS MESSAGE -->
+    {% if success %}
+      <h3 style="color: green; margin-top: 20px;">
+        Message Saved Successfully!
+      </h3>
+    {% endif %}
+
+    <!-- ✅ DISPLAY SUBMITTED DATA -->
+    {% if name %}
+      <div style="margin-top: 20px;">
+        <h3>Submitted Details:</h3>
+        <p><b>Name:</b> {{ name }}</p>
+        <p><b>Email:</b> {{ email }}</p>
+        <p><b>Message:</b> {{ message }}</p>
+      </div>
+    {% endif %}
+
   </section>
 
 </body>
