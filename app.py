@@ -11,7 +11,7 @@ def home():
 # Contact page
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_template('contact.html', name=None, success=False)
 
 # Form submission
 @app.route('/submit', methods=['POST'])
